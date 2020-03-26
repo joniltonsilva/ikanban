@@ -1,15 +1,9 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
-app.get('/', (request, response) => {
-
-    //return response.send('Tudo ok!');
-    return response.json({ 
-        success: true,
-        message: 'Tudo funcionando corretamente ok!'
-    });
-
-});
+app.use(express.json());
+app.use(routes);
 
 app.listen(3333);
