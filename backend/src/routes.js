@@ -12,4 +12,9 @@ routes.get('/healthcheck', (request, response) => {
 
 });
 
+
+routes.post('/users', (request, response) => {
+    return response.json(request.body);
+});
+
 module.exports = routes;
