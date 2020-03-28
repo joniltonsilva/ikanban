@@ -11,5 +11,5 @@
  Criar uma migrate
 ```npx knex migrate:make name_of_migrate```
  Executar as migrates pendentes
-```npm knes migrate:lasted```
+```npx knex migrate:latest```
 
